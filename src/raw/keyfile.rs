@@ -11,7 +11,7 @@ impl Display for KeySet {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
         write!(f, "[{}]\n", self.path)?;
         for (key, value) in &self.values {
-            write!(f, "{}: {}", key, value)?;
+            write!(f, "{}: {}\n", key, value)?;
         }
         return Ok(());
     }
